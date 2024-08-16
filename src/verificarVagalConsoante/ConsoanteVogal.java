@@ -9,8 +9,8 @@ public class ConsoanteVogal {
 		System.out.println("Digite uma letra: ");
 		String letra = scan.nextLine();
 
-		if (letra.equalsIgnoreCase("a") || "e".equalsIgnoreCase(letra) || letra.equalsIgnoreCase("i")
-				|| "o".equalsIgnoreCase(letra) || "u".equalsIgnoreCase(letra)) {
+		if ((letra.equalsIgnoreCase("a") || letra.equals("A"))|| ("e".equalsIgnoreCase(letra) || letra.equals("E"))|| (letra.equalsIgnoreCase("i")|| letra.equals("I"))
+				|| ("o".equalsIgnoreCase(letra)|| letra.equals("O")) || ("u".equalsIgnoreCase(letra)|| letra.equals("A"))) {
 			System.out.println(letra + "é vogal");
 		} else {
 			System.out.println(letra + " é consoante");
@@ -18,23 +18,23 @@ public class ConsoanteVogal {
 		
 		/* NÃO UTLILIZANDO O METODO .EQUALS OU .EQUALSIGNORECASE
 		switch (letra) {
-		case "a": {
+		case "a", "A": {
 			System.out.println(letra + " É uma vogal");
 		
 		}
-		case "e": {
+		case "e", "E": {
 			System.out.println(letra + " É uma vogal");
 			break;
 		}
-		case "i": {
+		case "i", , "I": {
 			System.out.println(letra + " É uma vogal");
 			break;
 		}
-		case "o": {
+		case "o", "O": {
 			System.out.println(letra + " É uma vogal");
 			break;
 		}
-		case "u": {
+		case "u", "U": {
 			System.out.println(letra + " É uma vogal");
 			break;
 		}
